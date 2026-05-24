@@ -5,7 +5,7 @@ const requireAuth = require('../middleware/auth');
 const supabase = require('../db/supabase');
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
 // POST /ai/recommend
 // Body: { examType: string, subjects: string[] }
